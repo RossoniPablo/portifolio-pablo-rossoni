@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pablo Rossoni">
+    <meta name="description" content="Portfólio - desenvolvedor front-end Pablo Rossoni">
+    <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css, javascript">
+    <title>Pablo Rossoni</title>
+    <link rel="icon" href="./iconn.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav data-menu="suave">
+            <p><a href="#home">&lsaquo;PR/&rsaquo;</a></p>
+            <button data-menu="button" aria-controls="menu"></button>
+
+            <ul data-menu="list" id="menu">
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#sobre">
+                    <li>Sobre</li>
+                </a>
+                <a href="#experiencia">
+                    <li>Experiência</li>
+                </a>
+                <a href="#projetos">
+                    <li>Projetos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="principal" id="home">
+            <div class="principal_left">
+                <h1>Olá, me chamo</h1>
+                <span class="principal-sentence"></span>
+                <span class="principal-input-cursor"></span>
+                <h1>Desenvolvedor Front-End</h1>
+
+                <div class="principal_botao">
+                    <a href="https://www.linkedin.com/in/pablo-rossoni-8523661a9/" target="_blank">
+                        <div class="principal_botao-linkedin">
+                            <img src="./assets/linkedin.png" />
+                            <p>LinkedIn</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Pablo107" target="_blank">
+                        <div class="principal_botao-github">
+                            <img src="./assets/github.png">
+                            <p>Github</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="principal_right">
+                <img src="/assets/pngwing.com.png" alt="Ilustração representando linhas de códgigo">
+            </div>
+
+            <div class="scroll" data-menu="suave"><a href="#sobre">
+                    <p> scroll down </p> <img src="./assets/scroll.png"
+                        alt="Setinha indicando para rolar a tela para baixo">
+                </a></div>
+        </section>
+
+        <section class="sobre-mim" id="sobre" data-anime="js-scroll">
+            <div class="sobre-mim_foto">
+                <img src="/assets/eu.png" alt="Uma foto do Pablo Rossoni">
+            </div>
+
+            <div class="sobre-mim_descricao">
+                <h1>Sobre mim</h1>
+                <h2>Imbaú - PR</h2>
+                <p>
+                    Olá, sou formado em Análise e Desenvolvimento de sistemas, estou em
+                    dedicação para Desenvolvimento Front-end. Decidi entrar nesse mar de
+                    conhecimento no início de 2020, quando comecei na faculdade de TADS,
+                    desde o inicio gostei do desenvolvimento web, principalmente a parte do
+                    Front-end e deste então a paixão aumentou.
+                </p>
+                <div class="sobre-mim_descricao-buttons">
+                    <a href="/assets/pablo-rossoni.pdf" download="">
+                        <div class="sobre-mim_descricao-buttons-curriculo">
+                            <img src="./assets/download-da-nuvem.png">
+                            <p>Currículo</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="experiencia" id="experiencia" data-anime="js-scroll">
+            <h1>Experiência</h1>
+            <div class="experiencia_wrapper">
+                <section class="experiencia_lugares">
+                    <ul data-tab="menu">
+                        <li>? ? ?</li>
+                        <li>Financeiro</li>
+                        <li>Estágio - TI</li>
+                    </ul>
+                </section>
+                <div class="experiencia_descricao" data-tab="content">
+                    <section data-anime="show-right">
+                        <h2>Estou em busca da minha primeira experiência "oficial" como Front-End</h2>
+                        <p class="experiencia_descricao-local">Pode ser na sua empresa :)</p>
+                        <p>Podemos bater um papo, você pode entrar em contato pelo e-mail pablorossoni107@outlook.com
+                        </p>
+                    </section>
+                    <section data-anime="show-right">
+                        <h2>Financeiro</h2>
+                        <span>Dez 2021 - Atual</span>
+                        <p class="experiencia_descricao-local">Prefeitura Municipal de Imbaú - PR - Secretaria Municipal
+                            de Assistência Social</p>
+                        <p>
+                            Setor financeiro/administrativo da Secretaria Municipal de Assistência Social, tendo as
+                            responsabilidades de:
+                            <br>Efetivação de pagamentos,
+                            <br>Diária dos servidores,
+                            <br>Solicitações de empenhos,
+                            <br>Solicitação de liquidação/notas,
+                            <br>Frota de veículos da secretaria/multas
+                        </p>
+                    </section>
+                    <section data-anime="show-right">
+                        <h2>Estágio TI</h2>
+                        <span>Jan 2021 - Dez 2021</span>
+                        <p class="experiencia_descricao-local">Secretaria Municipal de Assistência Social de Imbaú - PR
+                        </p>
+                        <p>
+                            Tive a oportunidade de estagiar como estagiário de TI/manutenção, com as responsabilidades
+                            de:
+                            <br>Auxiliar servidores com os equipamentos de informática,
+                            <br>Manutenção da rede,
+                            <br>Manutenção dos equipamentos de informática
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="projetos" id="projetos" data-anime="js-scroll">
+            <h1>Projetos</h1>
+            <div class="projetos_wrapper">
+                <section class="projetos_card">
+                    <a href="https://page-simpsons.vercel.app/" target="_blank">
+                        <img src="/assets/Os-Simpsons.png" class=" projeto-img" />
+                    </a>
+                    <h2>Os Simpsons</h2>
+                    <p>
+                        Projeto desenvolvido de conclusão da matéria de Computação Gráfica, do
+                        curso de Análise e Desenvolvimento de Sistemas no ano de 2020..
+                    </p>
+                    <span>Tecnologias usadas no projeto: foi utilizado conceitos básicos de HTML, CSS</span>
+                    <a href="https://page-simpsons.vercel.app/" target="_blank">
+                        <div class="projetos_card-button">
+                            <img src="./assets/link.png"
+                                alt="Imagem da familia Simpsons representando meu projeto número 1">
+                            Visualizar
+                        </div>
+                    </a>
+                </section>
+
+                <section class="projetos_card">
+                    <a href="COLOCAR LINK DO PROJETO NO GIT HUB" target="_blank">
+                        <img src="/assets/breve.jpg" class=" projeto-img" />
+                    </a>
+                    <h2>TITULO DO PROJETO</h2>
+                    <p>
+                        Projeto desenvolvido a partir do curso de JavaScript ES6+ completo da Origamid, para por em
+                        prática meus estudos iniciais de JS.
+                    </p>
+                    <span>Tecnologias usadas no projeto: HTML, CSS, JavaScript Vanilla.</span>
+                    <a href="COLOCAR LINK DO PROJETO NO GIT HUB" target="_blank">
+                        <div class="projetos_card-button">
+                            <img src="./assets/link.png" alt="Imagem de raposa representando meu projeto número 1">
+                            Visualizar
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </section>
+
+        <footer>
+            <p>Desenvolvido por</p><a href="https://github.com/Pablo107" target="_blank"><span> Pablo
+                    Rossoni<span></a>
+        </footer>
+    </main>
+
+    <script src="/js/script.js" type="module"></script>
+    <script src="/js/modules/vanilla-tilt.min.js"></script>
+
+    <script src="/js/modules/menu-mobile.js"></script>
+    <script src="js/modules/menu-transition.js"></script>
+    <script src="js/modules/tabnav.js"></script>
+    <script src="js/modules/scroll-suave.js"></script>
+    <script src="js/modules/animation-scroll.js"></script>
+    <script src="/js/modules/typing.js"></script>
+
+</body>
+
+</html>
