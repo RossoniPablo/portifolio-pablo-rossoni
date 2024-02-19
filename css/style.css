@@ -121,6 +121,7 @@ nav p a:hover {
   min-height: 35vh;
 }
 
+
 section h1 {
   margin-bottom: 2rem;
 }
@@ -237,7 +238,8 @@ a {
 .principal_botao-linkedin,
 .principal_botao-github,
 .sobre-mim_descricao-buttons-curriculo,
-.projetos_card-button {
+.projetos_card-button,
+.projetos_card-button-git {
   display: flex;
   align-items: center;
   padding: 3px 5px 5px;
@@ -252,11 +254,11 @@ a {
   font-size: 0.95rem;
   letter-spacing: 1.5px;
   height: 40px;
-
 }
 
 .principal_botao-linkedin::before,
-.projetos_card-button::before {
+.projetos_card-button::before,
+.projetos_card-button-git::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -273,7 +275,8 @@ a {
 .principal_botao-linkedin:hover,
 .principal_botao-github:hover,
 .sobre-mim_descricao-buttons-curriculo:hover,
-.projetos_card-button:hover {
+.projetos_card-button:hover,
+.projetos_card-button-git:hover {
   background-color: #272727;
   text-shadow: 1px 1px 3px #00bbc5;
 }
@@ -319,7 +322,8 @@ a {
 .sobre-mim_descricao-buttons-curriculo p,
 .sobre-mim_descricao-buttons-curriculo img,
 .projetos_card-button p,
-.projetos_card-button img {
+.projetos_card-button img,
+.projetos_card-button-git img {
   padding: 5px 0 5px;
 }
 
@@ -461,12 +465,18 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10%;
-  margin-bottom: 5rem;
+  margin-bottom: 20rem;
+}
+
+.projetos_card .wrapper-projetos_card-button {
+  display: flex;
+  gap: 1rem;
 }
 
 .projetos_card {
   width: 90%;
 }
+
 
 .projetos_card h2 {
   font-size: 1.3rem;
@@ -485,8 +495,10 @@ a {
   height: 220px;
 }
 
-.projetos_card-button img {
+.projetos_card-button img,
+.projetos_card-button-git img {
   width: 18px;
+  height: 18px;
 }
 
 .projeto-img {
@@ -513,6 +525,7 @@ a {
 .voltar a:hover {
   color: white;
 }
+
 
 /*Personalizando a barra de rolagem*/
 ::-webkit-scrollbar {
@@ -660,7 +673,8 @@ a {
   .principal_botao-linkedin,
   .principal_botao-github,
   .sobre-mim_descricao-buttons-curriculo,
-  .projetos_card-button {
+  .projetos_card-button,
+  .projetos_card-button-git {
     width: 110px;
   }
 
