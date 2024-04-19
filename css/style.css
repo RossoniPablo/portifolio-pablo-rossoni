@@ -20,8 +20,9 @@ main {
 }
 
 footer {
-  padding: 2rem 0;
+  padding: 4rem 0;
   text-align: center;
+
 }
 
 footer p {
@@ -40,6 +41,7 @@ footer span {
   z-index: 0;
   position: relative;
 }
+
 
 h1 {
   text-transform: uppercase;
@@ -116,7 +118,8 @@ nav p a:hover {
 .principal,
 .sobre-mim,
 .experiencia,
-.projetos {
+.projetos
+ {
   padding: 6.5% 15%;
   min-height: 35vh;
 }
@@ -464,8 +467,12 @@ a {
 .projetos_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10%;
-  margin-bottom: 20rem;
+  /* gap: 10%; */
+  /* margin-bottom: 20rem; */
+/* 
+  max-width: 1000px;
+  margin: 0 auto; */
+
 }
 
 .projetos_card .wrapper-projetos_card-button {
@@ -475,6 +482,7 @@ a {
 
 .projetos_card {
   width: 90%;
+  margin-bottom: 120px;
 }
 
 
@@ -686,5 +694,6 @@ a {
 
   footer {
     font-size: 0.8rem;
+   
   }
 }
