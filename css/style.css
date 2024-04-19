@@ -467,12 +467,6 @@ a {
 .projetos_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* gap: 10%; */
-  /* margin-bottom: 20rem; */
-/* 
-  max-width: 1000px;
-  margin: 0 auto; */
-
 }
 
 .projetos_card .wrapper-projetos_card-button {
