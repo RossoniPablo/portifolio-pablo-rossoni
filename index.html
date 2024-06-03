@@ -2,352 +2,276 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Pablo Rossoni">
-    <meta name="description" content="Portfólio - desenvolvedor front-end Pablo Rossoni">
-    <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css, javascript">
-    <title>Pablo Rossoni</title>
-    <link rel="icon" href="/assets/icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Pablo Rossoni">
+  <meta name="description" content="Portfólio - desenvolvedor front-end Pablo Rossoni">
+  <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css, javascript">
+  <title>Pablo Rossoni</title>
+  <link rel="icon" href="/assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav data-menu="suave">
-            <p>
-                <a href="#home">&lsaquo;PR/&rsaquo;</a>
+  <header>
+    <nav data-menu="suave">
+      <p>
+        <a href="#home">&lsaquo;PR/&rsaquo;</a>
+      </p>
+      <button data-menu="button" aria-controls="menu"></button>
+
+      <ul data-menu="list" id="menu">
+        <a href="#home">
+          <li>Home</li>
+        </a>
+        <a href="#sobre">
+          <li>Sobre</li>
+        </a>
+        <a href="#experiencia">
+          <li>Experiência</li>
+        </a>
+        <a href="#projetos">
+          <li>Projetos</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="principal" id="home">
+      <div class="principal_left">
+        <h1>Olá, me chamo</h1>
+        <span class="principal-sentence"></span>
+        <span class="principal-input-cursor"></span>
+        <h1>Desenvolvedor Front-End</h1>
+
+        <div class="principal_botao">
+          <a href="https://www.linkedin.com/in/pablo-rossoni-8523661a9/" target="_blank">
+            <div class="principal_botao-linkedin">
+              <img src="./assets/linkedin.png" />
+              <p>LinkedIn</p>
+            </div>
+          </a>
+          <a href="https://github.com/RossoniPablo" target="_blank">
+            <div class="principal_botao-github">
+              <img src="./assets/github.png">
+              <p>Github</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="principal_right">
+        <img src="/assets/pngwing.com.png" alt="Ilustração ">
+      </div>
+
+      <div class="scroll" data-menu="suave">
+        <a href="#sobre">
+          <p> scroll down </p>
+          <img src="./assets/scroll.png" alt="Setinha indicando para rolar a tela para baixo">
+        </a>
+      </div>
+    </section>
+
+    <section class="sobre-mim" id="sobre" data-anime="js-scroll">
+      <div class="sobre-mim_foto">
+        <img src="/assets/eu.png" alt="Uma foto do Pablo Rossoni">
+      </div>
+
+      <div class="sobre-mim_descricao">
+        <h1>Sobre mim</h1>
+        <h2>Imbaú - PR</h2>
+        <p>
+          Olá! Sou formado em Análise e Desenvolvimento de Sistemas e atualmente estou focado no
+          Desenvolvimento Front-end. Decidi mergulhar nesse mundo de conhecimento no início de 2020, quando
+          iniciei minha jornada na faculdade de TADS. Desde então, tenho desenvolvido um forte interesse pela
+          área de desenvolvimento web, especialmente pelo Front-end, e minha paixão por isso só tem crescido.
+        </p>
+
+        <div class="sobre-mim_descricao-buttons">
+          <a href="/assets/curriculo.pdf" download="">
+            <div class="sobre-mim_descricao-buttons-curriculo">
+              <img src="./assets/download-da-nuvem.png">
+              <p>Currículo</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="experiencia" id="experiencia" data-anime="js-scroll">
+      <h1>Experiência</h1>
+      <div class="experiencia_wrapper">
+        <section class="experiencia_lugares">
+          <ul data-tab="menu">
+            <li>? ? ?</li>
+            <li>Financeiro</li>
+            <li>Estágio - TI</li>
+          </ul>
+        </section>
+        <div class="experiencia_descricao" data-tab="content">
+          <section data-anime="show-right">
+            <h2>
+              Estou ansioso para embarcar em minha primeira oportunidade "formal" como desenvolvedor
+              Front-end.
+            </h2>
+            <p class="experiencia_descricao-local">Pode ser na sua empresa :)</p>
+            <p>Podemos bater um papo, você pode entrar em contato pelo e-mail pablorossoni107@outlook.com
             </p>
-            <button data-menu="button" aria-controls="menu"></button>
+          </section>
+          <section data-anime="show-right">
+            <h2>Financeiro</h2>
+            <span>Dez 2021 - Atual</span>
+            <p class="experiencia_descricao-local">
+              Prefeitura Municipal de Imbaú - PR - Secretaria Municipal
+              de Assistência Social</p>
+            <p>
+              Setor financeiro/administrativo da Secretaria Municipal de Assistência Social, tendo as
+              responsabilidades de:
+              <br>Efetivação de pagamentos,
+              <br>Diária dos servidores,
+              <br>Solicitações de empenhos,
+              <br>Solicitação de liquidação/notas,
+              <br>Frota de veículos da secretaria/multas
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Estágio TI</h2>
+            <span>Jan 2021 - Dez 2021</span>
+            <p class="experiencia_descricao-local">Secretaria Municipal de Assistência Social de Imbaú - PR
+            </p>
+            <p>
+              Tive a oportunidade de estagiar como estagiário de TI/manutenção, com as responsabilidades
+              de:
+              <br>Auxiliar servidores com os equipamentos de informática,
+              <br>Manutenção da rede,
+              <br>Manutenção dos equipamentos de informática
+            </p>
+          </section>
+        </div>
+      </div>
 
-            <ul data-menu="list" id="menu">
-                <a href="#home">
-                    <li>Home</li>
+
+    </section>
+
+    <section class="projects" id="projetos" data-anime="js-scroll">
+      <h3>Projetos</h3>
+      <div class="project-wrapper">
+
+        <div class="project">
+          <div>
+            <img src="/assets/project-1.png" alt="">
+          </div>
+          <div class="project-information">
+
+            <h2>Carrinho de compra</h2>
+
+            <div class="description">
+              <p>
+                Este projeto de carrinho de compras, desenvolvido com JavaScript e React JS, permite listar produtos
+                na
+                tela por meio da barra de pesquisa, consumindo a API do Mercado Livre. Também é possível adicionar e
+                remover produtos do carrinho.
+              </p>
+            </div>
+            <div class="wrapper-view">
+              <div class="skills-icons">
+                <img src="/assets/html.svg" alt="">
+                <img src="/assets/css.svg" alt="">
+                <img src="/assets/js.svg" alt="">
+              </div>
+
+              <div class="view">
+                <a href="https://github.com/RossoniPablo/carrinho-compra" target="_blank">
+                  <img src="/assets/github.svg" alt="">
                 </a>
-                <a href="#sobre">
-                    <li>Sobre</li>
+                <a href="https://carrinho-compra-kappa.vercel.app/" target="_blank">
+                  <img src="/assets/view.svg" alt="">
                 </a>
-                <a href="#experiencia">
-                    <li>Experiência</li>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div>
+            <img src="/assets/project-2.png" alt="">
+          </div>
+          <div class="project-information">
+            <h2>Anotações</h2>
+            <div class="description">
+              <p>Projeto desenvolvido para ser um sistema de notas, com a possibilidade de criar uma nota utilizando
+                apenas texto ou gravando uma nota.</p>
+            </div>
+            <div class="wrapper-view">
+              <div class="skills-icons">
+                <img src="/assets/html.svg" alt="">
+                <img src="/assets/css.svg" alt="">
+                <img src="/assets/js.svg" alt="">
+                <img src="/assets/react.png" alt="">
+
+              </div>
+
+              <div class="view">
+                <a href="https://github.com/RossoniPablo/notes" target="_blank">
+                  <img src="/assets/github.svg" alt="">
                 </a>
-                <a href="#projetos">
-                    <li>Projetos</li>
+                <a href="https://notes-git-main-rossonipablo.vercel.app/" target="_blank">
+                  <img src="/assets/view.svg" alt="">
                 </a>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="principal" id="home">
-            <div class="principal_left">
-                <h1>Olá, me chamo</h1>
-                <span class="principal-sentence"></span>
-                <span class="principal-input-cursor"></span>
-                <h1>Desenvolvedor Front-End</h1>
-
-                <div class="principal_botao">
-                    <a href="https://www.linkedin.com/in/pablo-rossoni-8523661a9/" target="_blank">
-                        <div class="principal_botao-linkedin">
-                            <img src="./assets/linkedin.png" />
-                            <p>LinkedIn</p>
-                        </div>
-                    </a>
-                    <a href="https://github.com/RossoniPablo" target="_blank">
-                        <div class="principal_botao-github">
-                            <img src="./assets/github.png">
-                            <p>Github</p>
-                        </div>
-                    </a>
-                </div>
+              </div>
             </div>
-            <div class="principal_right">
-                <img src="/assets/pngwing.com.png" alt="Ilustração ">
+          </div>
+        </div>
+
+
+        <div class="project">
+          <div>
+            <img src="/assets/project-3.png" alt="">
+          </div>
+          <div class="project-information">
+            <h2>Menu Delivery</h2>
+
+            <div class="description">
+              <p>O Projeto Devburguer consiste em um menu de delivery com uma variedade de produtos disponíveis para
+                pedido. Basta selecionar o item desejado, que será automaticamente adicionado ao seu carrinho. Em
+                seguida, você pode inserir o endereço de entrega e finalizar o pedido. Uma vez confirmado, seu pedido
+                será encaminhado diretamente para o WhatsApp. </p>
             </div>
+            <div class="wrapper-view">
+              <div class="skills-icons">
+                <img src="/assets/html.svg" alt="">
+                <img src="/assets/tailwind.png" alt="">
+                <img src="/assets/js.svg" alt="">
+              </div>
 
-            <div class="scroll" data-menu="suave"><a href="#sobre">
-                    <p> scroll down </p> <img src="./assets/scroll.png"
-                        alt="Setinha indicando para rolar a tela para baixo">
-                </a></div>
-        </section>
-
-        <section class="sobre-mim" id="sobre" data-anime="js-scroll">
-            <div class="sobre-mim_foto">
-                <img src="/assets/eu.png" alt="Uma foto do Pablo Rossoni">
+              <div class="view">
+                <a href="https://github.com/RossoniPablo/menu-delivery" target="_blank">
+                  <img src="/assets/github.svg" alt="">
+                </a>
+                <a href="https://menu-delivery.vercel.app/" target="_blank">
+                  <img src="/assets/view.svg" alt="">
+                </a>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <div class="sobre-mim_descricao">
-                <h1>Sobre mim</h1>
-                <h2>Imbaú - PR</h2>
-                <p>
-                    Olá! Sou formado em Análise e Desenvolvimento de Sistemas e atualmente estou focado no
-                    Desenvolvimento Front-end. Decidi mergulhar nesse mundo de conhecimento no início de 2020, quando
-                    iniciei minha jornada na faculdade de TADS. Desde então, tenho desenvolvido um forte interesse pela
-                    área de desenvolvimento web, especialmente pelo Front-end, e minha paixão por isso só tem crescido.
-                </p>
+      </div>
+      </div>
 
-                <div class="sobre-mim_descricao-buttons">
-                    <a href="/assets/curriculo.pdf" download="">
-                        <div class="sobre-mim_descricao-buttons-curriculo">
-                            <img src="./assets/download-da-nuvem.png">
-                            <p>Currículo</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
+    </section>
+  </main>
 
-        <section class="experiencia" id="experiencia" data-anime="js-scroll">
-            <h1>Experiência</h1>
-            <div class="experiencia_wrapper">
-                <section class="experiencia_lugares">
-                    <ul data-tab="menu">
-                        <li>? ? ?</li>
-                        <li>Financeiro</li>
-                        <li>Estágio - TI</li>
-                    </ul>
-                </section>
-                <div class="experiencia_descricao" data-tab="content">
-                    <section data-anime="show-right">
-                        <h2>
-                            Estou ansioso para embarcar em minha primeira oportunidade "formal" como desenvolvedor
-                            Front-end.
-                        </h2>
-                        <p class="experiencia_descricao-local">Pode ser na sua empresa :)</p>
-                        <p>Podemos bater um papo, você pode entrar em contato pelo e-mail pablorossoni107@outlook.com
-                        </p>
-                    </section>
-                    <section data-anime="show-right">
-                        <h2>Financeiro</h2>
-                        <span>Dez 2021 - Atual</span>
-                        <p class="experiencia_descricao-local">
-                            Prefeitura Municipal de Imbaú - PR - Secretaria Municipal
-                            de Assistência Social</p>
-                        <p>
-                            Setor financeiro/administrativo da Secretaria Municipal de Assistência Social, tendo as
-                            responsabilidades de:
-                            <br>Efetivação de pagamentos,
-                            <br>Diária dos servidores,
-                            <br>Solicitações de empenhos,
-                            <br>Solicitação de liquidação/notas,
-                            <br>Frota de veículos da secretaria/multas
-                        </p>
-                    </section>
-                    <section data-anime="show-right">
-                        <h2>Estágio TI</h2>
-                        <span>Jan 2021 - Dez 2021</span>
-                        <p class="experiencia_descricao-local">Secretaria Municipal de Assistência Social de Imbaú - PR
-                        </p>
-                        <p>
-                            Tive a oportunidade de estagiar como estagiário de TI/manutenção, com as responsabilidades
-                            de:
-                            <br>Auxiliar servidores com os equipamentos de informática,
-                            <br>Manutenção da rede,
-                            <br>Manutenção dos equipamentos de informática
-                        </p>
-                    </section>
-                </div>
-            </div>
+  <footer>
+    <p>Desenvolvido por</p><a href="https://github.com/Pablo107" target="_blank"><span> PabloRossoni<span></a>
+  </footer>
 
-
-        </section>
-
-        <section class="projetos" id="projetos" data-anime="js-scroll">
-            <h1>Projetos</h1>
-            <div class="projetos_wrapper">
-                <div class="projetos_card">
-                    <a href="https://landing-page-gpt-3.vercel.app/" target="_blank">
-                        <img src="/assets/projeto-1-GPT.png" class=" projeto-img" />
-                    </a>
-                    <h2>GPT-3</h2>
-                    <p>
-                        Projeto desenvolvido com a finalidade de treinar o uso de HTML e CSS, por ser somente uma Landig
-                        Page, optei por não fazer a parte da responsividade.
-                    </p>
-                    <span>Tecnologias utilizas no projeto: foi utilizado conceitos básicos de HTML e CSS.</span>
-
-                    <div class="wrapper-projetos_card-button">
-                        <a href="https://landing-page-gpt-3.vercel.app/" target="_blank">
-                            <div class="projetos_card-button">
-                                Visualizar
-                            </div>
-                        </a>
-                        <a href="https://github.com/RossoniPablo/landing-page-GPT3" target="_blank">
-                            <div class="projetos_card-button-git">
-                                <img src="./assets/github.png">
-                                <p>Github</p>
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-
-                <div class="projetos_card">
-                    <a href="https://jordan-model.vercel.app/" target="_blank">
-                        <img src="/assets/projeto-2-jordan.png" class=" projeto-img" />
-                    </a>
-                    <h2>Jordan model</h2>
-                    <p>
-                        Projeto desenvolvido com a finalidade de treinar o uso de HTML,CSS e responsidade.
-                    </p>
-                    <span>Tecnologias utilizas no projeto: foi utilizado conceitos básicos de HTML e CSS.</span>
-                    <div class="wrapper-projetos_card-button">
-                        <a href="https://jordan-model.vercel.app/" target="_blank">
-                            <div class="projetos_card-button">
-                                Visualizar
-                            </div>
-                        </a>
-                        <a href="https://github.com/RossoniPablo/jordan-model" target="_blank">
-                            <div class="projetos_card-button-git">
-                                <img src="./assets/github.png">
-                                <p>Github</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="projetos_card">
-                    <a href="https://clima-agora-livid.vercel.app/" target="_blank">
-                        <img src="/assets/projeto-3-clima-agora.png" class=" projeto-img" />
-                    </a>
-                    <h2>Clima agora</h2>
-                    <p>
-                        Projeto desenvolvido para teste da API: Weather API, que trás informações de tempo.
-                    </p>
-                    <span>Tecnologias utilizas no projeto: HTML, CSS e JS.</span>
-                    <div class="wrapper-projetos_card-button">
-                        <a href="https://clima-agora-livid.vercel.app/" target="_blank">
-                            <div class="projetos_card-button">
-                                Visualizar
-                            </div>
-                        </a>
-                        <a href="https://github.com/RossoniPablo/clima-agora" target="_blank">
-                            <div class="projetos_card-button-git">
-                                <img src="./assets/github.png">
-                                <p>Github</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="projetos_card">
-                    <a href="https://carrinho-compra-kappa.vercel.app/" target="_blank">
-                        <img src="/assets/projeto-4-carrinho-compras.png" class=" projeto-img" />
-                    </a>
-                    <h2>Carrinho de compra</h2>
-                    <p>
-                        Este projeto de um carrinho de compras desenvolvido com JavaScript e React JS, por meio da barra
-                        de pesquisa permite listar produtos na tela consumindo a API do mercado livre, adicionar e
-                        remover produtos do carrinho.
-                    </p>
-                    <span>Tecnologias utilizas no projeto: HTML, CSS, JS e React JS.</span>
-                    <div class="wrapper-projetos_card-button">
-                        <a href="https://carrinho-compra-kappa.vercel.app/" target="_blank">
-                            <div class="projetos_card-button">
-                                Visualizar
-                            </div>
-                        </a>
-                        <a href="https://github.com/RossoniPablo/carrinho-compra" target="_blank">
-                            <div class="projetos_card-button-git">
-                                <img src="./assets/github.png">
-                                <p>Github</p>
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-
-                <div class="projetos_card">
-                    <a href="https://notes-git-main-rossonipablo.vercel.app/" target="_blank">
-                        <img src="/assets/projeto-5-notas.png" class=" projeto-img" />
-                    </a>
-                    <h2>Anotações</h2>
-                    <p>
-                        Projeto desenvolvido para ser um sistema de notas, com a possibilidade de criar uma nota
-                        utilizando apenas texto ou gravando um nota.
-                    </p>
-                    <span>Tecnologias utilizas no projeto: HTML, CSS, JS e React JS.</span>
-                    <div class="wrapper-projetos_card-button">
-                        <a href="https://notes-git-main-rossonipablo.vercel.app/" target="_blank">
-                            <div class="projetos_card-button">
-                                Visualizar
-                            </div>
-                        </a>
-                        <a href="https://github.com/RossoniPablo/notes" target="_blank">
-                            <div class="projetos_card-button-git">
-                                <img src="./assets/github.png">
-                                <p>Github</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="projetos_card">
-                    <a href="https://fig-pro-orpin.vercel.app/" target="_blank">
-                        <img src="/assets/projeto-6.png" class=" projeto-img" />
-                    </a>
-                    <h2>FigPro</h2>
-                    <p>
-                        Projeto de uma landing page simples, para estudo em posicionamento, responsividade e tailwind
-                        CSS.
-                    </p>
-                    <span>Tecnologias utilizas no projeto: HTML, Tailwind CSS e JS</span>
-                    <div class="wrapper-projetos_card-button">
-                        <a href="https://fig-pro-orpin.vercel.app/" target="_blank">
-                            <div class="projetos_card-button">
-                                Visualizar
-                            </div>
-                        </a>
-                        <a href="https://github.com/RossoniPablo/fig-prog" target="_blank">
-                            <div class="projetos_card-button-git">
-                                <img src="./assets/github.png">
-                                <p>Github</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="projetos_card">
-                    <a href="https://menu-delivery.vercel.app/" target="_blank">
-                        <img src="/assets/projeto-7.png" class=" projeto-img" />
-                    </a>
-                    <h2>Menu Delivery</h2>
-                    <p>
-                        O Projeto Devburguer consiste em um menu de delivery com uma variedade de produtos disponíveis
-                        para pedido. Basta selecionar o item desejado, que ele será automaticamente adicionado ao seu
-                        carrinho. Em seguida, você pode inserir o endereço de entrega e finalizar o pedido. Uma vez
-                        confirmado, seu pedido será encaminhado diretamente para o WhatsApp
-                    </p>
-                    <span>Tecnologias utilizas no projeto: HTML, Tailwind CSS, JS e WhatsApp API</span>
-                    <div class="wrapper-projetos_card-button">
-                        <a href="https://menu-delivery.vercel.app/" target="_blank">
-                            <div class="projetos_card-button">
-                                Visualizar
-                            </div>
-                        </a>
-                        <a href="https://github.com/RossoniPablo/menu-delivery" target="_blank">
-                            <div class="projetos_card-button-git">
-                                <img src="./assets/github.png">
-                                <p>Github</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Desenvolvido por</p><a href="https://github.com/Pablo107" target="_blank"><span> PabloRossoni<span></a>
-    </footer>
-
-    <script type="module" src="./js/modules/script.js"></script>
-    <script src="./js/modules/vanilla-tilt.min.js"></script>
+  <script type="module" src="./js/modules/script.js"></script>
+  <script src="./js/modules/vanilla-tilt.min.js"></script>
 
 </body>
 

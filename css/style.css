@@ -102,8 +102,6 @@ nav p {
   padding: 10px;
   font-size: 1.3rem;
   width: 100%;
-
-
 }
 
 nav p a {
@@ -118,8 +116,7 @@ nav p a:hover {
 .principal,
 .sobre-mim,
 .experiencia,
-.projetos
- {
+.projetos {
   padding: 6.5% 15%;
   min-height: 35vh;
 }
@@ -251,7 +248,7 @@ a {
   border-radius: 8px;
   position: relative;
   background-color: #121212;
-  margin-top: 1rem;
+
   transition: 0.3s;
   font-weight: 600;
   font-size: 0.95rem;
@@ -464,55 +461,151 @@ a {
   }
 }
 
-.projetos_wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+
+/* Projetos */
+
+.projects {
+  background-color: #151515;
+  padding: 6.5% 15%;
 }
 
-.projetos_card .wrapper-projetos_card-button {
+.projects h3 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #c4c4c4;
+}
+
+.project-wrapper {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 10px;
 }
 
-.projetos_card {
-  width: 90%;
-  margin-bottom: 120px;
+.project.reverse {
+  flex-direction: row-reverse;
 }
 
-
-.projetos_card h2 {
-  font-size: 1.3rem;
-  margin: 2.5rem 0;
+.project {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-color: #121212;
+  align-items: top;
+  border-radius: 10px;
 }
 
-.projetos_card span {
-  color: #6386f9;
-  font-size: 0.9rem;
+.project img {
+  width: 300px;
+  border-radius: 8px;
+  transition: all 0.4s;
+}
+
+.project img:hover {
+  transform: scale(1.1);
+}
+
+.project .project-information {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.project .project-information .description {
+  width: 100%;
+  background-color: #151515;
+  border-radius: 8px;
+  color: #fff;
+  margin: 0;
+}
+
+.project .project-information .wrapper-view {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.project .project-information .wrapper-view .skills-icons {
+  background-color: #151515;
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.project .project-information .wrapper-view .skills-icons {
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+}
+
+.project .project-information .wrapper-view .skills-icons img {
   display: block;
-  margin: 2rem 0;
+  padding: 3px;
+  transition: 0.4s all;
 }
 
-.projetos_card img {
-  width: 100%;
-  height: 220px;
+.project .project-information .wrapper-view .skills-icons img:hover {
+  background-color: #c4c4c4;
+  padding: 3px;
 }
 
-.projetos_card-button img,
-.projetos_card-button-git img {
-  width: 18px;
-  height: 18px;
+.project .skills-icons img,
+.view img {
+  width: 30px;
 }
 
-.projeto-img {
-  border-left: 5px solid #6386f9;
-  width: 100%;
-  transition: 0.5s;
+.project .wrapper-view .view {
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 
-.projeto-img:hover {
-  transform: scale(110%);
-  border-left: 5px solid white;
+.project .wrapper-view .view img {
+  display: block;
+  transition: filter 0.4s ease;
+  background-color: #c4c4c4;
+  padding: 6px;
 }
+
+.project .wrapper-view .view img:hover {
+  filter: brightness(1.4);
+}
+
+h2 {
+  color: #fff;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .voltar {
   text-align: center;
@@ -548,6 +641,15 @@ a {
 }
 
 /*Tratando responsividade*/
+
+@media (max-width: 375px) {
+  .wrapper-projetos_card-button {
+    justify-content: center;
+  }
+
+}
+
+
 
 @media (max-width: 1325px) {
   .principal h1 {
@@ -688,6 +790,6 @@ a {
 
   footer {
     font-size: 0.8rem;
-   
+
   }
 }
