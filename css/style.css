@@ -513,6 +513,10 @@ a {
   justify-content: space-between;
 }
 
+.project .project-information h2 {
+  color: #fff;
+}
+
 .project .project-information .description {
   width: 100%;
   background-color: #151515;
@@ -573,10 +577,6 @@ a {
   filter: brightness(1.4);
 }
 
-h2 {
-  color: #fff;
-  margin: 0;
-}
 
 
 
