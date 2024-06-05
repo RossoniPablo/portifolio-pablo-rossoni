@@ -237,9 +237,7 @@ a {
 
 .principal_botao-linkedin,
 .principal_botao-github,
-.sobre-mim_descricao-buttons-curriculo,
-.projetos_card-button,
-.projetos_card-button-git {
+.sobre-mim_descricao-buttons-curriculo {
   display: flex;
   align-items: center;
   padding: 3px 5px 5px;
@@ -256,9 +254,7 @@ a {
   height: 40px;
 }
 
-.principal_botao-linkedin::before,
-.projetos_card-button::before,
-.projetos_card-button-git::before {
+.principal_botao-linkedin::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -274,9 +270,7 @@ a {
 
 .principal_botao-linkedin:hover,
 .principal_botao-github:hover,
-.sobre-mim_descricao-buttons-curriculo:hover,
-.projetos_card-button:hover,
-.projetos_card-button-git:hover {
+.sobre-mim_descricao-buttons-curriculo:hover {
   background-color: #272727;
   text-shadow: 1px 1px 3px #00bbc5;
 }
@@ -320,10 +314,7 @@ a {
 }
 
 .sobre-mim_descricao-buttons-curriculo p,
-.sobre-mim_descricao-buttons-curriculo img,
-.projetos_card-button p,
-.projetos_card-button img,
-.projetos_card-button-git img {
+.sobre-mim_descricao-buttons-curriculo img {
   padding: 5px 0 5px;
 }
 
@@ -615,10 +606,6 @@ a {
 /*Tratando responsividade*/
 
 @media (max-width: 375px) {
-  .wrapper-projetos_card-button {
-    justify-content: center;
-  }
-
   .projects .project {
     flex-direction: column;
   }
@@ -762,10 +749,6 @@ a {
     gap: 5%;
     margin-bottom: 10rem;
   } */
-
-  .projetos_card-button {
-    margin: auto;
-  }
 }
 
 @media (max-width: 1325px) {
